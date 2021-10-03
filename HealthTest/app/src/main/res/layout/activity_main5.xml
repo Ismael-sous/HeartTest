@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#037748"
+    android:backgroundTint="#2E4340"
+    tools:context=".MainActivityPage5">
+
+    <Button
+        android:id="@+id/next2Button2"
+        android:layout_width="124dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#B17866"
+        android:onClick="onClickNext5"
+        android:text="@string/next"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/previous2Button2"
+        android:layout_width="124dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#B17866"
+        android:onClick="onClickPrevious5"
+        android:text="@string/previous"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:text="@string/physical_activity"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="369dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="@string/are_you_walking_fast"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/how_many_times_a_week_do_you_participate_in_physical_activity"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="386dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/do_you_know_your_heart_rate_that_should_not_be_exceeded_during_exercise"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/regarding_your_sports_profile_do_you_practice"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="387dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/which_of_the_following_activities_would_you_do_the_most_easily_on_your_weekends"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner7"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="123dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <RadioButton
+            android:id="@+id/yes2"
+            android:layout_width="82dp"
+            android:layout_height="36dp"
+            android:text="@string/yes"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/no2"
+            android:layout_width="81dp"
+            android:layout_height="38dp"
+            android:text="@string/no"
+            android:textColor="#FAFAFA"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="191dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="123dp"
+        android:entries="@array/howMany"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="183dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="124dp"
+        android:entries="@array/sport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Spinner
+        android:id="@+id/spinner8"
+        android:layout_width="183dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="124dp"
+        android:entries="@array/weActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:layout_width="194dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="123dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <RadioButton
+            android:id="@+id/yes3"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/no3"
+            android:layout_width="99dp"
+            android:layout_height="48dp"
+            android:text="@string/no"
+            android:textColor="#FFFFFF" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="191dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/physicalapngegg"
+        android:contentDescription="@string/physical_activity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

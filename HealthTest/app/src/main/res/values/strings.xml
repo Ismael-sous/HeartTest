@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">HealthTest</string>
+    <string name="do_the_test">Do The Test !</string>
+    <string name="your_name">Your Name</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="selectOne">Your age</string>
+    <string name="sexe" translatable="false">Sexe</string>
+    <string name="age" translatable="false">Age</string>
+    <string name="name">Name</string>
+    <string name="save_result">Save Result</string>
+    <string name="save_and_send">Save And Send</string>
+    <string name="home">HOME</string>
+    <string name="exit">EXIT</string>
+    <string name="enter_your_mail">Enter your Mail</string>
+    <string name="click_here">Click here:</string>
+    <string name="for_more_information">For more information</string>
+    <string name="send_result_in_mail">SEND RESULT IN MAIL</string>
+    <string name="my_heart">My Heart</string>
+    <string name="do_you_have_high_blood_pressure">Do you have high blood pressure ?</string>
+    <string name="do_you_have_family_member_with_heart_problems">Do you have family member with heart problems ?</string>
+    <string name="do_you_know_your_bmi">Do you know your BMI ?</string>
+    <string name="do_you_have_a_cholesterol_problem">Do you have a cholesterol problem ?</string>
+    <string name="are_you_diabetic">Are you diabetic ?</string>
+    <string name="next">Next</string>
+    <string name="do_you_have_a_heart_problem">Do you have a heart problem?</string>
+    <string name="physical_activity">Physical Activity</string>
+    <string name="check_mark">Check Mark</string>
+    <string name="heart_mark">Heart Mark</string>
+    <string name="share">SHARE</string>
+    <string name="result">RESULT</string>
+    <string name="woman">Woman</string>
+    <string name="men">Men</string>
+    <string name="hello">Hello</string>
+    <string name="your_age">Your Age</string>
+    <string name="previous">PREVIOUS</string>
+    <string name="my_heart_monitoring">My Heart Monitoring</string>
+    <string name="have_you_already_checked_with_your_gp_about_your_cardiovascular_risk">Have you already checked with your GP about your cardiovascular risk?</string>
+    <string name="have_you_ever_had_a_cardiac_check_up">Have you ever had a cardiac check-up?</string>
+    <string name="have_you_ever_consulted_a_cardiologist">Have you ever consulted a cardiologist?</string>
+    <string name="are_you_walking_fast">Are you walking fast?</string>
+    <string name="how_many_times_a_week_do_you_participate_in_physical_activity">How many times a week do you participate in physical activity ?</string>
+    <string name="do_you_know_your_heart_rate_that_should_not_be_exceeded_during_exercise">Do you know your heart rate that should not be exceeded during exercise ?</string>
+    <string name="regarding_your_sports_profile_do_you_practice">Regarding your sports profile, do you practice:</string>
+    <string name="which_of_the_following_activities_would_you_do_the_most_easily_on_your_weekends">Which of the following activities would you do the most easily on your weekends ?</string>
+    <string name="physical_mark">Physical Mark</string>
+    <string name="lienweb">LienWeb</string>
+    <string name="hearttest">HeartTest</string>
+    <string name="by_isma_l_sousane">By Ismaël SOUSANE</string>
+    <string name="imageprofile_png" translatable="false">ImageProfile.png</string>
+    <string name="are_you">Are you ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="heart_png" translatable="false">Heart_png</string>
+
+    <string-array name="malist">
+        <item>Select Your Age</item>
+        <item>Less than 40</item>
+        <item>Between 40 and 60</item>
+        <item>More than 60</item>
+    </string-array>
+
+    <string-array name="yes_no">
+        <item>Select an option</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>I do not know</item>
+    </string-array>
+
+    <string-array name="select_age">
+        <item>Your age</item>
+    </string-array>
+
+    <string-array name="howMany">
+        <item>Select an option</item>
+        <item>Never</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3+</item>
+    </string-array>
+
+    <string-array name="sport">
+        <item>Select an option</item>
+        <item>Always</item>
+        <item>Usually</item>
+        <item>Sometimes</item>
+        <item>Occasionally</item>
+        <item>Rarely</item>
+    </string-array>
+
+<!--    <string-array name="sport">
+        <item>Select an option</item>
+        <item>You have never done sports</item>
+        <item>You played sports and haven't done it for a year or more</item>
+        <item>You exercise regularly</item>
+        <item>You play sports from time to time (on vacation for example)</item>
+    </string-array>-->
+
+    <string-array name="weActivity">
+        <item>Select an option</item>
+        <item>Watch TV</item>
+        <item>Walk around</item>
+        <item>Play video games</item>
+        <item>Play sports</item>
+    </string-array>
+
+
+</resources>

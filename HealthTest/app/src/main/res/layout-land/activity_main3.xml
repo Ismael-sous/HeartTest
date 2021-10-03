@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="false"
+    android:background="#037748"
+    android:backgroundTint="#2E4340"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="-5dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:contentDescription="@string/heart_png"
+                app:srcCompat="@drawable/pinclipart_com_anatomical_heart_clip_art_5334656"
+                />
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:text="@string/my_heart"
+                android:textAlignment="center"
+                android:textColor="#EFEBEB"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/QuestHeartPb"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:text="@string/do_you_have_a_heart_problem"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="257dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/y1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:textColor="#F3F2F2" />
+
+                <RadioButton
+                    android:id="@+id/n1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:textColor="#FFFDFD" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/questHeartPb2"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:text="@string/are_you_diabetic"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="233dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/y2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:textColor="#F3F2F2" />
+
+                <RadioButton
+                    android:id="@+id/n2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:textColor="#FFFDFD" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/questHeartPb"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:text="@string/do_you_have_a_cholesterol_problem"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_wrapBehaviorInParent="vertical_only" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="235dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                app:barrierAllowsGoneWidgets="false"
+                app:barrierDirection="left"
+                app:chainUseRtl="false"
+                app:flow_horizontalAlign="end"
+                app:flow_verticalAlign="baseline"
+                app:layout_wrapBehaviorInParent="vertical_only">
+
+                <RadioButton
+                    android:id="@+id/y3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:textColor="#F3F2F2"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/n3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:textColor="#FFFDFD"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/questHeartPb3"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:text="@string/do_you_have_high_blood_pressure"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="255dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/y4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:height="48dp"
+                    android:text="@string/yes"
+                    android:textColor="#F3F2F2"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/n4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:textColor="#FFFDFD"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/questHeartPb4"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:text="@string/do_you_have_family_member_with_heart_problems"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:entries="@array/yes_no"
+                android:gravity="center_vertical|fill_vertical"
+                android:prompt="@string/selectOne"
+                android:spinnerMode="dropdown"
+                android:textColor="#F1EAEA"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/questHeartPb5"
+                android:layout_width="197dp"
+                android:layout_height="38dp"
+                android:text="@string/do_you_know_your_bmi"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:entries="@array/yes_no"
+                android:gravity="center_vertical"
+                android:prompt="@string/selectOne"
+                android:spinnerMode="dropdown"
+                android:textColor="#F1EAEA"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/previous2Button"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:backgroundTint="#B17866"
+                android:onClick="onClickPrevious2"
+                android:text="@string/previous"
+                android:textColor="#000000"
+                tools:ignore="MissingConstraints,OnClick" />
+
+            <Button
+                android:id="@+id/next2Button"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:backgroundTint="#B17866"
+                android:onClick="onClickNext2"
+                android:text="@string/next"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

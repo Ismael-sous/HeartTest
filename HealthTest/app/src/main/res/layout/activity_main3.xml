@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="false"
+    android:background="#037748"
+    android:backgroundTint="#2E4340"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="118dp"
+        android:entries="@array/yes_no"
+        android:gravity="center_vertical|fill_vertical"
+        android:prompt="@string/selectOne"
+        android:spinnerMode="dropdown"
+        android:textColor="#F1EAEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questHeartPb4"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="118dp"
+        android:entries="@array/yes_no"
+        android:gravity="center_vertical|fill_vertical"
+        android:prompt="@string/selectOne"
+        android:spinnerMode="dropdown"
+        android:textColor="#F1EAEA"
+        app:layout_constraintEnd_toStartOf="@+id/next2Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questHeartPb5"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="137dp"
+        android:text="@string/my_heart"
+        android:textAlignment="center"
+        android:textColor="#EFEBEB"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/questHeartPb3"
+        android:layout_width="304dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/do_you_have_high_blood_pressure"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+    <TextView
+        android:id="@+id/questHeartPb4"
+        android:layout_width="385dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/do_you_have_family_member_with_heart_problems"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+
+    <TextView
+        android:id="@+id/questHeartPb5"
+        android:layout_width="297dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/do_you_know_your_bmi"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="-5dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="248dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questHeartPb3">
+
+        <RadioButton
+            android:id="@+id/y4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="48dp"
+            android:text="@string/yes"
+            android:textColor="#F3F2F2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/n4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"
+            android:textColor="#FFFDFD"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/questHeartPb"
+        android:layout_width="389dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/do_you_have_a_cholesterol_problem"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_wrapBehaviorInParent="vertical_only" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/questHeartPb2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuestHeartPb">
+
+        <RadioButton
+            android:id="@+id/y1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="@string/yes"
+            android:textColor="#F3F2F2"
+            tools:ignore="RtlHardcoded" />
+
+        <RadioButton
+            android:id="@+id/n1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"
+            android:textColor="#FFFDFD" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/questHeartPb2"
+        android:layout_width="404dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/are_you_diabetic"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/next2Button"
+        android:layout_width="124dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#B17866"
+        android:onClick="onClickNext2"
+        android:text="@string/next"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/previous2Button"
+        android:layout_width="124dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#B17866"
+        android:onClick="onClickPrevious2"
+        android:text="@string/previous"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <TextView
+        android:id="@+id/QuestHeartPb"
+        android:layout_width="409dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:text="@string/do_you_have_a_heart_problem"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display"
+        tools:ignore="RtlCompat" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="223dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="-300dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/questHeartPb2"
+        app:layout_constraintTop_toBottomOf="@+id/questHeartPb2">
+
+        <RadioButton
+            android:id="@+id/y2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes"
+            android:textColor="#F3F2F2" />
+
+        <RadioButton
+            android:id="@+id/n2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"
+            android:textColor="#FFFDFD" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="238dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:barrierAllowsGoneWidgets="false"
+        app:barrierDirection="left"
+        app:chainUseRtl="false"
+        app:flow_horizontalAlign="end"
+        app:flow_verticalAlign="baseline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questHeartPb"
+        app:layout_wrapBehaviorInParent="vertical_only">
+
+        <RadioButton
+            android:id="@+id/y3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes"
+            android:textColor="#F3F2F2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/n3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"
+            android:textColor="#FFFDFD"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="162dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pinclipart_com_anatomical_heart_clip_art_5334656"
+        android:contentDescription="@string/todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

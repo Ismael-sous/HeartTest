@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#037748"
+    android:backgroundTint="#2E4340"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="372dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/QuestHeartPb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display">
+
+        <RadioButton
+            android:id="@+id/y3"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/woman"
+            android:textColor="#F3F2F2" />
+
+        <RadioButton
+            android:id="@+id/n3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/men"
+            android:textColor="#FFFDFD" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/QuestHeartPb"
+        android:layout_width="68dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/hello"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#B17866"
+        android:onClick="onClickNext1"
+        android:text="@string/next"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#B17866"
+        android:onClick="onClickPrevious1"
+        android:text="@string/previous"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="71dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="420dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/next1Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/your_age"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/previousButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="129dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="572dp"
+        android:contentDescription="@string/imageprofile_png"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngegg" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/are_you"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

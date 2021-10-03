@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test de Santé</string>
+    <string name="do_the_test">Faire le Test !</string>
+    <string name="your_name">Votre Nom</string>
+    <string name="selectOne" translatable="false">Votre age</string>
+    <string name="name">Nom</string>
+    <string name="save_result">Enregistrer</string>
+    <string name="save_and_send">Enregistrer et envoyer</string>
+    <string name="home">ACCEUIL</string>
+    <string name="exit">QUITTER</string>
+    <string name="enter_your_mail">Entrer mail</string>
+    <string name="click_here">Cliquer ici</string>
+    <string name="for_more_information">Pour plus d\'informations</string>
+    <string name="send_result_in_mail">Envoyer les resultats par mail</string>
+    <string name="my_heart">Mon coeur</string>
+    <string name="do_you_have_high_blood_pressure">Avez-vous de la tension ?</string>
+    <string name="do_you_have_family_member_with_heart_problems">Avez-vous un membre de la famille avec des problèmes cardiaques ?</string>
+    <string name="do_you_know_your_bmi">Savez-vous votre IMC ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="do_you_have_a_cholesterol_problem">Avez-vous des problèmes de cholestérol ?</string>
+    <string name="are_you_diabetic">Etes-vous diabetique ?</string>
+    <string name="next">Suivant</string>
+    <string name="previous">PRECEDENT</string>
+    <string name="do_you_have_a_heart_problem">Avez-vous des problèmes cardiaques ?</string>
+    <string name="physical_activity">Activité Physique</string>
+    <string name="check_mark">Suivi</string>
+    <string name="heart_mark">Coeur</string>
+    <string name="share">PARTAGER</string>
+    <string name="result">RESULTAT</string>
+    <string name="woman">Femme</string>
+    <string name="men">Homme</string>
+    <string name="hello">Bonjour</string>
+    <string name="your_age">Votre Age</string>
+    <string name="my_heart_monitoring">Mon Suivi Cardiaque</string>
+    <string name="have_you_already_checked_with_your_gp_about_your_cardiovascular_risk">Avez-vous déjà fait le point avec votre médecin à propos de votre risque cardiovasculaire ?</string>
+    <string name="have_you_ever_had_a_cardiac_check_up">Avez-vous déjà effectué un bilan cardiaque ?</string>
+    <string name="have_you_ever_consulted_a_cardiologist">"Avez-vous déjà consulté un cardiologue ?  "</string>
+    <string name="are_you_walking_fast">Marchez-vous d’un bon pas tous les jours ?</string>
+    <string name="how_many_times_a_week_do_you_participate_in_physical_activity">Combien de fois par semaine pratiquez-vous des activités physiques ?</string>
+    <string name="do_you_know_your_heart_rate_that_should_not_be_exceeded_during_exercise">Connaissez-vous votre fréquence cardiaque à ne pas dépasser lors d’un effort ?</string>
+    <string name="regarding_your_sports_profile_do_you_practice">Concernant votre profil sportif, vous pratiquez plutôt :</string>
+    <string name="which_of_the_following_activities_would_you_do_the_most_easily_on_your_weekends">Parmi ces activités, laquelle pratiqueriez-vous le plus pendant vos weekends ?</string>
+    <string name="physical_mark">Activité Physique</string>
+    <string name="lienweb">Lien web</string>
+    <string name="hearttest">HeartTest</string>
+    <string name="by_isma_l_sousane">par Ismaël SOUSANE</string>
+    <string name="are_you">Sexe :</string>
+</resources>
